@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+/* .header-section{
+    border-right:2px solid grey;
+} */
+
+.header{
+    display: flex;
+}
+
+.header-style{
+    border: 2px solid grey;
+    width:80px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    background-color: #F2F3F2;
+}
+
+.calendar-style{
+    border: 1px solid grey;
+}
+
+.days-section{
+    display: flex;
+}
+
+/* ახლად შექმნილი დივების სტილები */
+
+/* თვის რიცხვების სტილები */
+.row-class{
+    display: flex;
+}
+
+.box-class{
+    border: 2px solid grey;
+    width:80px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    background-color: #F2F3F2;
+}
+
+/* თვის დღეების და საათების სტილები */
+
+.dateHourStyle{
+    width: 80px;
+    border: 2px solid black;
+    height: 45px;
+    background-color: #F0FFF0;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.dayStyle{
+    width: 80px;
+    border: 2px solid black;
+    height: 45px;
+    background-color: #FFA07A;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
