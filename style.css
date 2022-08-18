@@ -4,6 +4,10 @@
     padding:0px;
 }
 
+body{
+    padding:10px;
+}
+
 .main-container{
     display: flex;
     flex-direction: row;
@@ -19,7 +23,7 @@
 }
 
 .header-style{
-    border: 2px solid grey;
+    border: 1px solid grey;
     width:80px;
     height:30px;
     display: flex;
@@ -44,7 +48,7 @@
 }
 
 .box-class{
-    border: 2px solid grey;
+    border: 1px solid grey;
     width:80px;
     height:30px;
     display: flex;
@@ -55,9 +59,9 @@
 
 /* თვის დღეების და საათების სტილები */
 
-.dateHourStyle{
+.date-Hour-Style{
     width: 80px;
-    border: 2px solid black;
+    border: 1px solid grey;
     height: 45px;
     background-color: #F0FFF0;
     display: flex;
@@ -65,12 +69,32 @@
     padding-left: 5px;
 }
 
-.dayStyle{
+.day-Style{
     width: 80px;
-    border: 2px solid black;
+    border: 1px solid black;
     height: 45px;
-    background-color: #FFA07A;
     display: flex;
     align-items: center;
-    padding-left: 5px;
+    justify-content: center;
+    position:relative;
+}
+
+.day-Style-color{
+    background-color: #FFA07A;
+}
+
+.style-weekend-window{
+    position:absolute;
+    width:60px;
+    height:40px;
+    border:none;
+    font-size: 10px;
+    background-color: black;
+    color:white;
+    top:-22px;
+    left:58px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
