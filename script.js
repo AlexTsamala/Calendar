@@ -75,14 +75,10 @@ const dateInfo = [
 const numberOfDay = document.getElementById("days-section");
 const headerSection = document.getElementById('header-section')
 
-function addWeekendWindow(){
-    
-}
-
 for(let i=1; i<32; i++){
-    let div = document.createElement("div")
+    let div = document.createElement("div");
     div.innerText = i;
-    div.classList = "box-class"
+    div.classList = "box-class";
     numberOfDay.appendChild(div); 
 }
 
@@ -96,17 +92,17 @@ for(let i=0; i<12; i++){
     firstDiv.innerText = dateInfo[i].month;
     secondDiv.innerText = dateInfo[i].day;
     thirdDiv.innerText = dateInfo[i].hour;
-    firstDiv.classList = "date-Hour-Style";
-    secondDiv.classList = "date-Hour-Style";
-    thirdDiv.classList = "date-Hour-Style";
+    firstDiv.classList = "date-hour-style";
+    secondDiv.classList = "date-hour-style";
+    thirdDiv.classList = "date-hour-style";
     row.appendChild(firstDiv);
     row.appendChild(secondDiv);
     row.appendChild(thirdDiv);
     for(let n=1; n<32; n++){
-        let div = document.createElement("div")
+        let div = document.createElement("div");
         div.innerText = 8;
         div.setAttribute('title',"weekend day's "+n)
-        div.classList = "day-Style day-Style-color";
+        div.classList = "day-style day-style-color";
         row.appendChild(div);  
     }
 }
